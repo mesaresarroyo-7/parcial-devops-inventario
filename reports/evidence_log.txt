@@ -98,3 +98,55 @@ Tipo de contenido: application/json; charset=utf-8
 Diagnóstico: 404 Not Found: revisar URL o endpoint solicitado.
 
 Initialized empty Git repository in /home/devasc/parcial-devops-inventario/.git/
+[master (root-commit) 64048e0] Inicializa proyecto de automatización DevOps
+ 7 files changed, 342 insertions(+)
+ create mode 100755 README.md
+ create mode 100644 data/config.yaml
+ create mode 100644 data/inventory.json
+ create mode 100644 data/services.csv
+ create mode 100755 reports/evidence_log.txt
+ create mode 100644 reports/inventory_report.txt
+ create mode 100755 scripts/inventory_automation.py
+Switched to a new branch 'mejora-reportes'
+M	reports/evidence_log.txt
+[mejora-reportes 045ad9c] Documenta manejo de errores REST API
+ 1 file changed, 1 insertion(+)
+Switched to a new branch 'main'
+M	reports/evidence_log.txt
+Already up to date.
+
+== Estado Git ==
+ M reports/evidence_log.txt
+
+== Historial Git ==
+* 045ad9c (HEAD -> main, mejora-reportes) Documenta manejo de errores REST API
+* 64048e0 (master) Inicializa proyecto de automatización DevOps
+
+== Archivos finales ==
+./.git/COMMIT_EDITMSG
+./.git/HEAD
+./.git/ORIG_HEAD
+./.git/config
+./.git/description
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info/exclude
+./.git/logs/HEAD
+./README.md
+./data/config.yaml
+./data/inventory.json
+./data/services.csv
+./reports/evidence_log.txt
+./reports/inventory_report.txt
+./scripts/inventory_automation.py
