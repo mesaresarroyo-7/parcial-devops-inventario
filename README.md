@@ -17,4 +17,3 @@ Proyecto de automatización de inventario usando Linux, Python, Git y REST API H
 python3 scripts/inventory_automation.py
 cat reports/inventory_report.txt
 ```
-\n## Mejora documentada\nSe agregó evidencia de manejo de errores HTTP para la sustentación.
