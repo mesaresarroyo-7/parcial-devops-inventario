@@ -1,0 +1,45 @@
+REPORTE DE AUTOMATIZACIÓN DEVOPS
+==================================================
+
+Organización: Empresa Demo
+Entorno: laboratorio DEVASC
+Administrador: equipo-devops
+
+DISPOSITIVOS INVENTARIADOS
+--------------------------------------------------
+router-core | 192.168.10.1 | router | active
+switch-access | 192.168.10.2 | switch | active
+server-web | 192.168.10.10 | server | maintenance
+firewall-edge | 192.168.10.254 | firewall | active
+
+SERVICIOS REGISTRADOS
+--------------------------------------------------
+HTTP | Puerto 80 | TCP | active
+HTTPS | Puerto 443 | TCP | active
+SSH | Puerto 22 | TCP | active
+DNS | Puerto 53 | UDP | active
+SNMP | Puerto 161 | UDP | maintenance
+
+RESUMEN
+--------------------------------------------------
+Total de dispositivos: 4
+Dispositivos activos: 3
+Dispositivos en mantenimiento: 1
+Total de servicios: 5
+
+PRUEBA REST API HTTPS
+--------------------------------------------------
+Endpoint válido
+URL consultada: https://api.github.com
+Código HTTP: 200
+Solicitud exitosa: True
+Tipo de contenido: application/json; charset=utf-8
+Diagnóstico: Solicitud correcta: el endpoint respondió exitosamente.
+
+Endpoint inválido controlado
+URL consultada: https://api.github.com/endpoint-no-existe-devops-parcial
+Código HTTP: 404
+Solicitud exitosa: False
+Tipo de contenido: application/json; charset=utf-8
+Diagnóstico: 404 Not Found: revisar URL o endpoint solicitado.
+

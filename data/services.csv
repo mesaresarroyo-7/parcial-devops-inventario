@@ -1,0 +1,6 @@
+service,port,protocol,status
+HTTP,80,TCP,active
+HTTPS,443,TCP,active
+SSH,22,TCP,active
+DNS,53,UDP,active
+SNMP,161,UDP,maintenance

@@ -1,0 +1,26 @@
+[
+  {
+    "hostname": "router-core",
+    "ip": "192.168.10.1",
+    "type": "router",
+    "status": "active"
+  },
+  {
+    "hostname": "switch-access",
+    "ip": "192.168.10.2",
+    "type": "switch",
+    "status": "active"
+  },
+  {
+    "hostname": "server-web",
+    "ip": "192.168.10.10",
+    "type": "server",
+    "status": "maintenance"
+  },
+  {
+    "hostname": "firewall-edge",
+    "ip": "192.168.10.254",
+    "type": "firewall",
+    "status": "active"
+  }
+]

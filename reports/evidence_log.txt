@@ -1,0 +1,100 @@
+EVIDENCIA DEL PROYECTO DEVOPS
+Fecha: Fri Jun 26 03:17:58 UTC 2026
+
+== Sistema y red ==
+devasc
+labvm
+/home/devasc/parcial-devops-inventario
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:e9:3d:e6 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 86095sec preferred_lft 86095sec
+    inet6 fd17:625c:f037:2:a00:27ff:fee9:3de6/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86338sec preferred_lft 14338sec
+    inet6 fe80::a00:27ff:fee9:3de6/64 scope link 
+       valid_lft forever preferred_lft forever
+
+== Versiones ==
+Python 3.8.2
+git version 2.25.1
+requests y PyYAML disponibles
+
+== Estructura inicial ==
+./README.md
+./data/config.yaml
+./data/inventory.json
+./data/services.csv
+./reports/evidence_log.txt
+./scripts/inventory_automation.py
+
+== Permisos antes/después ==
+drwxr-x--- 6 devasc devasc 4096 Jun 26 03:17 /home/devasc/parcial-devops-inventario
+drwxr-x--- 2 devasc devasc 4096 Jun 26 03:17 data
+drwxr-x--- 2 devasc devasc 4096 Jun 26 03:17 reports
+drwxr-x--- 2 devasc devasc 4096 Jun 26 03:17 scripts
+-rwxr-x--- 1 devasc devasc 6178 Jun 26 03:17 scripts/inventory_automation.py
+
+== Resultado de permisos ==
+drwxr-x--- 6 devasc devops_team 4096 Jun 26 03:17 /home/devasc/parcial-devops-inventario
+drwxr-x--- 2 devasc devops_team 4096 Jun 26 03:17 data
+-rw-r----- 1 devasc devops_team  186 Jun 26 03:17 data/config.yaml
+-rw-r----- 1 devasc devops_team  460 Jun 26 03:17 data/inventory.json
+-rw-r----- 1 devasc devops_team  130 Jun 26 03:17 data/services.csv
+drwxr-x--- 2 devasc devops_team 4096 Jun 26 03:17 reports
+drwxr-x--- 2 devasc devops_team 4096 Jun 26 03:17 scripts
+-rwxr-x--- 1 devasc devops_team 6178 Jun 26 03:17 scripts/inventory_automation.py
+
+== Ejecución del script ==
+Iniciando automatización de inventario...
+Automatización finalizada correctamente.
+Reporte generado en: /home/devasc/parcial-devops-inventario/reports/inventory_report.txt
+API principal: HTTP 200 success=True
+API de error controlado: HTTP 404 success=False
+
+== Reporte generado ==
+REPORTE DE AUTOMATIZACIÓN DEVOPS
+==================================================
+
+Organización: Empresa Demo
+Entorno: laboratorio DEVASC
+Administrador: equipo-devops
+
+DISPOSITIVOS INVENTARIADOS
+--------------------------------------------------
+router-core | 192.168.10.1 | router | active
+switch-access | 192.168.10.2 | switch | active
+server-web | 192.168.10.10 | server | maintenance
+firewall-edge | 192.168.10.254 | firewall | active
+
+SERVICIOS REGISTRADOS
+--------------------------------------------------
+HTTP | Puerto 80 | TCP | active
+HTTPS | Puerto 443 | TCP | active
+SSH | Puerto 22 | TCP | active
+DNS | Puerto 53 | UDP | active
+SNMP | Puerto 161 | UDP | maintenance
+
+RESUMEN
+--------------------------------------------------
+Total de dispositivos: 4
+Dispositivos activos: 3
+Dispositivos en mantenimiento: 1
+Total de servicios: 5
+
+PRUEBA REST API HTTPS
+--------------------------------------------------
+Endpoint válido
+URL consultada: https://api.github.com
+Código HTTP: 200
+Solicitud exitosa: True
+Tipo de contenido: application/json; charset=utf-8
+Diagnóstico: Solicitud correcta: el endpoint respondió exitosamente.
+
+Endpoint inválido controlado
+URL consultada: https://api.github.com/endpoint-no-existe-devops-parcial
+Código HTTP: 404
+Solicitud exitosa: False
+Tipo de contenido: application/json; charset=utf-8
+Diagnóstico: 404 Not Found: revisar URL o endpoint solicitado.
+
+Initialized empty Git repository in /home/devasc/parcial-devops-inventario/.git/

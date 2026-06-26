@@ -1,0 +1,5 @@
+organization: Empresa Demo
+environment: laboratorio DEVASC
+admin: equipo-devops
+api_url: https://api.github.com
+invalid_api_url: https://api.github.com/endpoint-no-existe-devops-parcial
